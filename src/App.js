@@ -53,7 +53,7 @@ function App() {
       correctAnswer: "candle light dinner",
       wrongReaction: "❌ Look at the photo again! 💭",
       reaction: "📸 Perfect memory! 💕",
-      defaultPhoto: "/WhatsApp Image 2026-02-06 at 4.35.21 PM.jpeg",
+      defaultPhoto: "/Screenshot 2026-02-02 121324.png",
     },
   ];
 
