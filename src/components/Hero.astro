@@ -1,0 +1,263 @@
+---
+---
+
+<section id="hero">
+	<nav>
+		<div class="logo">Elegance</div>
+		<div class="nav-links">
+			<a href="#services">Services</a>
+			<a href="#gallery">Gallery</a>
+			<a href="#about">About</a>
+			<a href="#contact" class="cta-button">Book Now</a>
+		</div>
+		<button class="mobile-menu" aria-label="Menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</nav>
+
+	<div class="hero-content">
+		<div class="hero-text">
+			<h1>Transform Your Beauty</h1>
+			<p class="tagline">Expert Makeup Artistry & Traditional Mehandi Designs</p>
+			<p class="description">Creating stunning looks for your most precious moments. From bridal elegance to contemporary glamour, we bring your vision to life.</p>
+			<div class="hero-buttons">
+				<a href="#contact" class="primary-button">Book Appointment</a>
+				<a href="#gallery" class="secondary-button">View Portfolio</a>
+			</div>
+		</div>
+		<div class="hero-image">
+			<div class="image-placeholder">
+				<img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional makeup artistry" />
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	#hero {
+		min-height: 100vh;
+		background: linear-gradient(135deg, var(--color-light) 0%, #FFF5F0 100%);
+		padding-top: 0;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3);
+		position: sticky;
+		top: 0;
+		background: rgba(250, 248, 246, 0.95);
+		backdrop-filter: blur(10px);
+		z-index: 1000;
+		box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+	}
+
+	.logo {
+		font-family: var(--font-heading);
+		font-size: 32px;
+		font-weight: 700;
+		color: var(--color-primary);
+		letter-spacing: 1px;
+	}
+
+	.nav-links {
+		display: none;
+		gap: calc(var(--spacing-unit) * 5);
+		align-items: center;
+	}
+
+	.nav-links a {
+		color: var(--color-text);
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		transition: color 0.3s ease;
+		text-transform: uppercase;
+	}
+
+	.nav-links a:hover {
+		color: var(--color-primary);
+	}
+
+	.nav-links .cta-button {
+		background: var(--color-primary);
+		color: var(--color-white);
+		padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+		border-radius: 30px;
+		transition: all 0.3s ease;
+	}
+
+	.nav-links .cta-button:hover {
+		background: var(--color-secondary);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 15px rgba(201, 169, 129, 0.3);
+	}
+
+	.mobile-menu {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 8px;
+	}
+
+	.mobile-menu span {
+		width: 25px;
+		height: 2px;
+		background: var(--color-primary);
+		transition: all 0.3s ease;
+	}
+
+	.hero-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: calc(var(--spacing-unit) * 6);
+		align-items: center;
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: calc(var(--spacing-unit) * 8) calc(var(--spacing-unit) * 3);
+	}
+
+	.hero-text h1 {
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: calc(var(--spacing-unit) * 3);
+		color: var(--color-dark);
+		line-height: 1.1;
+	}
+
+	.tagline {
+		font-size: 20px;
+		color: var(--color-primary);
+		font-weight: 500;
+		margin-bottom: calc(var(--spacing-unit) * 2);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.description {
+		font-size: 18px;
+		line-height: 1.8;
+		margin-bottom: calc(var(--spacing-unit) * 4);
+		color: var(--color-text);
+	}
+
+	.hero-buttons {
+		display: flex;
+		gap: calc(var(--spacing-unit) * 2);
+		flex-wrap: wrap;
+	}
+
+	.primary-button {
+		background: var(--color-primary);
+		color: var(--color-white);
+		padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+		border-radius: 30px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 16px;
+		transition: all 0.3s ease;
+		display: inline-block;
+		box-shadow: 0 4px 15px rgba(201, 169, 129, 0.2);
+	}
+
+	.primary-button:hover {
+		background: var(--color-secondary);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(201, 169, 129, 0.3);
+	}
+
+	.secondary-button {
+		background: transparent;
+		color: var(--color-primary);
+		padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+		border: 2px solid var(--color-primary);
+		border-radius: 30px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 16px;
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.secondary-button:hover {
+		background: var(--color-primary);
+		color: var(--color-white);
+		transform: translateY(-2px);
+	}
+
+	.hero-image {
+		position: relative;
+	}
+
+	.image-placeholder {
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+	}
+
+	.image-placeholder::before {
+		content: '';
+		position: absolute;
+		top: -10%;
+		right: -10%;
+		width: 200px;
+		height: 200px;
+		background: var(--color-accent);
+		border-radius: 50%;
+		z-index: -1;
+		opacity: 0.3;
+	}
+
+	.image-placeholder img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
+		aspect-ratio: 3/4;
+	}
+
+	@media (min-width: 768px) {
+		.nav-links {
+			display: flex;
+		}
+
+		.mobile-menu {
+			display: none;
+		}
+
+		.hero-content {
+			grid-template-columns: 1fr 1fr;
+			padding: calc(var(--spacing-unit) * 12) calc(var(--spacing-unit) * 6);
+		}
+
+		.hero-text h1 {
+			font-size: 72px;
+		}
+
+		.tagline {
+			font-size: 22px;
+		}
+
+		.description {
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.hero-text h1 {
+			font-size: 40px;
+		}
+
+		.hero-image {
+			order: -1;
+		}
+	}
+</style>

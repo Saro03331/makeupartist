@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<title>Elegance Beauty Studio | Makeup Artist & Mehandi Services</title>
+		<meta name="description" content="Professional makeup artist and mehandi services for weddings, parties, and special occasions. Transform your look with expert artistry.">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	:root {
+		--color-primary: #C9A981;
+		--color-secondary: #D4AF76;
+		--color-accent: #E8C5A5;
+		--color-dark: #2C2420;
+		--color-text: #4A4A4A;
+		--color-light: #FAF8F6;
+		--color-white: #FFFFFF;
+		--font-heading: 'Cormorant Garamond', serif;
+		--font-body: 'Montserrat', sans-serif;
+		--spacing-unit: 8px;
+	}
+
+	html,
+	body {
+		width: 100%;
+		min-height: 100%;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: var(--font-body);
+		color: var(--color-text);
+		background: var(--color-light);
+		line-height: 1.6;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-heading);
+		color: var(--color-dark);
+		line-height: 1.2;
+	}
+
+	section {
+		padding: calc(var(--spacing-unit) * 10) calc(var(--spacing-unit) * 3);
+	}
+
+	@media (min-width: 768px) {
+		section {
+			padding: calc(var(--spacing-unit) * 15) calc(var(--spacing-unit) * 6);
+		}
+	}
+</style>
