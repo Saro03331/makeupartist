@@ -261,20 +261,7 @@ function Carousel() {
       </div>
 
       {/* ── Masonry-style mini grid below ── */}
-     {/*  <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
-        {GALLERY_IMAGES.map((item, i) => (
-          <div key={item.id} onClick={() => setLightbox(i)} style={{ position: "relative", overflow: "hidden", borderRadius: 4, cursor: "zoom-in", aspectRatio: i % 3 === 1 ? "3/4" : "4/3" }}>
-            <img src={item.src} alt={item.label} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.5s ease" }}
-              onMouseEnter={e => { e.currentTarget.style.transform = "scale(1.08)"; }}
-              onMouseLeave={e => { e.currentTarget.style.transform = "scale(1)"; }} />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.6))", pointerEvents: "none" }} />
-            <div style={{ position: "absolute", bottom: 8, left: 10, right: 10 }}>
-              <span className="cormorant" style={{ color: "#fff", fontSize: 12, letterSpacing: 1.5, textTransform: "uppercase", textShadow: "0 1px 4px rgba(0,0,0,0.7)" }}>{item.tag}</span>
-            </div>
-            <div style={{ position: "absolute", top: 8, right: 8, width: 28, height: 28, borderRadius: "50%", background: "rgba(200,152,107,0.85)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, color: "#fff" }}>⤢</div>
-          </div>
-        ))}
-      </div> */}
+     {/* git  */}
     </>
   );
 }
