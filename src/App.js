@@ -261,7 +261,7 @@ function Carousel() {
       </div>
 
       {/* ── Masonry-style mini grid below ── */}
-      <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
+     {/*  <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
         {GALLERY_IMAGES.map((item, i) => (
           <div key={item.id} onClick={() => setLightbox(i)} style={{ position: "relative", overflow: "hidden", borderRadius: 4, cursor: "zoom-in", aspectRatio: i % 3 === 1 ? "3/4" : "4/3" }}>
             <img src={item.src} alt={item.label} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.5s ease" }}
@@ -274,7 +274,7 @@ function Carousel() {
             <div style={{ position: "absolute", top: 8, right: 8, width: 28, height: 28, borderRadius: "50%", background: "rgba(200,152,107,0.85)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, color: "#fff" }}>⤢</div>
           </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
@@ -530,7 +530,7 @@ export default function App() {
   const handleSubmit = () => {
     if (contactForm.name && contactForm.phone) {
       const msg = `🌸 *New Booking Enquiry - Sakura Mehendi*\n\n👤 *Name:* ${contactForm.name}\n📞 *Phone:* ${contactForm.phone}${contactForm.email ? `\n📧 *Email:* ${contactForm.email}` : ""}${contactForm.service ? `\n💼 *Service:* ${contactForm.service}` : ""}${contactForm.message ? `\n📝 *Message:* ${contactForm.message}` : ""}`;
-      window.open(`https://wa.me/919629692392?text=${encodeURIComponent(msg)}`, "_blank");
+      window.open(`https://wa.me/919566429054?text=${encodeURIComponent(msg)}`, "_blank");
       setSubmitted(true);
     }
   };
@@ -709,7 +709,7 @@ export default function App() {
                   <div style={{ width: 80, height: 80, borderRadius: "50%", background: "linear-gradient(135deg,#c8986b,#a5673a)", margin: "0 auto 20px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 36, boxShadow: "0 0 40px rgba(200,152,107,0.4)" }}>✿</div>
                   <div className="playfair" style={{ fontSize: 28, color: "#f3e9de", marginBottom: 12, fontWeight: 800 }}>Enquiry Sent!</div>
                   <p className="cormorant" style={{ fontSize: 18, color: "#c8ab8e", lineHeight: 1.8, marginBottom: 28 }}>Your message is on the way to WhatsApp. I'll respond within a few hours! 🌸</p>
-                  <a href="https://wa.me/919629692392" target="_blank" rel="noreferrer"
+                  <a href="https://wa.me/919566429054" target="_blank" rel="noreferrer"
                     style={{ display: "inline-flex", alignItems: "center", gap: 10, padding: "14px 28px", background: "linear-gradient(135deg,#25D366,#128C7E)", color: "#fff", textDecoration: "none", fontFamily: "'Cormorant Garamond',serif", fontSize: 14, letterSpacing: 2, textTransform: "uppercase", boxShadow: "0 8px 28px rgba(37,211,102,0.35)" }}>
                     Open WhatsApp
                   </a>
@@ -897,7 +897,7 @@ export default function App() {
               )
             },
             {
-              href: "https://wa.me/919629692392",
+              href: "https://wa.me/919566429054",
               icon: (
                 <svg viewBox="0 0 24 24" width="20" height="20">
                   <rect width="24" height="24" rx="5" fill="#25D366"/>

@@ -1,0 +1,314 @@
+---
+---
+
+<section id="services">
+	<div class="services-container">
+		<div class="section-header">
+			<h2>Premium Services</h2>
+			<p class="section-subtitle">Choose Your Perfect Look</p>
+		</div>
+
+		<div class="services-grid">
+			<div class="service-card">
+				<div class="service-badge">POPULAR</div>
+				<div class="service-header">
+					<h3>Bridal Makeup</h3>
+					<div class="price">₹5,999</div>
+				</div>
+				<p class="service-desc">Complete bridal makeover with HD & airbrush finish</p>
+				<ul class="service-features">
+					<li>Pre-wedding consultation</li>
+					<li>HD & Airbrush makeup</li>
+					<li>All-day longevity</li>
+					<li>Touch-up kit included</li>
+					<li>Trial session</li>
+				</ul>
+				<button class="book-btn">Book Now</button>
+			</div>
+
+			<div class="service-card featured">
+				<div class="service-badge featured-badge">MOST BOOKED</div>
+				<div class="service-header">
+					<h3>Bridal Package</h3>
+					<div class="price">₹14,999</div>
+				</div>
+				<p class="service-desc">Complete bridal experience with makeup & mehandi</p>
+				<ul class="service-features">
+					<li>Bridal makeup (full day)</li>
+					<li>Bridal mehandi</li>
+					<li>Hair styling</li>
+					<li>Makeup trial</li>
+					<li>Touch-up kit + stickers</li>
+					<li>Assistant included</li>
+				</ul>
+				<button class="book-btn featured-btn">Book Now</button>
+			</div>
+
+			<div class="service-card">
+				<div class="service-badge">₹2,999</div>
+				<div class="service-header">
+					<h3>Party Makeup</h3>
+					<div class="price">₹2,999</div>
+				</div>
+				<p class="service-desc">Glamorous makeup for any celebration</p>
+				<ul class="service-features">
+					<li>Custom glam looks</li>
+					<li>Long-lasting formulas</li>
+					<li>Smokey & bold styles</li>
+					<li>Quick turnaround</li>
+					<li>Travel available</li>
+				</ul>
+				<button class="book-btn">Book Now</button>
+			</div>
+
+			<div class="service-card">
+				<div class="service-badge">₹3,499</div>
+				<div class="service-header">
+					<h3>Mehandi Design</h3>
+					<div class="price">₹3,499</div>
+				</div>
+				<p class="service-desc">Intricate traditional mehandi application</p>
+				<ul class="service-features">
+					<li>Arabic & Indian designs</li>
+					<li>Premium henna paste</li>
+					<li>Custom patterns</li>
+					<li>2-3 hour duration</li>
+					<li>Fast drying formula</li>
+				</ul>
+				<button class="book-btn">Book Now</button>
+			</div>
+
+			<div class="service-card">
+				<div class="service-badge">₹4,499</div>
+				<div class="service-header">
+					<h3>Hair Styling</h3>
+					<div class="price">₹4,499</div>
+				</div>
+				<p class="service-desc">Professional hairstyling to complete your look</p>
+				<ul class="service-features">
+					<li>Bridal updos</li>
+					<li>Complex braids</li>
+					<li>Hair extensions</li>
+					<li>Accessories included</li>
+					<li>Hair care products</li>
+				</ul>
+				<button class="book-btn">Book Now</button>
+			</div>
+
+			<div class="service-card">
+				<div class="service-badge">₹1,999</div>
+				<div class="service-header">
+					<h3>Makeup Lessons</h3>
+					<div class="price">₹1,999</div>
+				</div>
+				<p class="service-desc">Learn professional makeup techniques</p>
+				<ul class="service-features">
+					<li>One-on-one sessions</li>
+					<li>Hands-on training</li>
+					<li>Product recommendations</li>
+					<li>Personalized tips</li>
+					<li>2-hour session</li>
+				</ul>
+				<button class="book-btn">Book Now</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	#services {
+		background: var(--color-light);
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.services-container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 80px;
+	}
+
+	.section-header h2 {
+		font-size: 56px;
+		font-weight: 700;
+		margin-bottom: 16px;
+		background: linear-gradient(90deg, #FF006E, #FFBE0B);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.section-subtitle {
+		font-size: 18px;
+		color: var(--color-cyan);
+		font-weight: 600;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+
+	.service-card {
+		background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+		padding: 40px;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 0, 110, 0.1);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.service-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(255, 0, 110, 0.1) 0%, transparent 100%);
+		opacity: 0;
+		transition: opacity 0.4s ease;
+	}
+
+	.service-card:hover {
+		transform: translateY(-12px) scale(1.02);
+		border-color: rgba(255, 0, 110, 0.3);
+		box-shadow: 0 20px 60px rgba(255, 0, 110, 0.2), 0 0 40px rgba(0, 217, 255, 0.1);
+	}
+
+	.service-card.featured {
+		grid-column: 1;
+		border: 2px solid rgba(251, 86, 7, 0.5);
+		background: linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 100%);
+	}
+
+	.service-card.featured:hover {
+		border-color: rgba(251, 86, 7, 1);
+		box-shadow: 0 20px 60px rgba(251, 86, 7, 0.3), 0 0 40px rgba(0, 217, 255, 0.15);
+	}
+
+	.service-badge {
+		display: inline-block;
+		background: linear-gradient(90deg, #FF006E, #FB5607);
+		color: white;
+		padding: 6px 16px;
+		border-radius: 20px;
+		font-size: 12px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	.featured-badge {
+		background: linear-gradient(90deg, #FB5607, #FFBE0B);
+	}
+
+	.service-header {
+		margin-bottom: 16px;
+	}
+
+	.service-card h3 {
+		font-size: 28px;
+		font-weight: 700;
+		margin-bottom: 8px;
+		color: var(--color-white);
+	}
+
+	.price {
+		font-size: 32px;
+		font-weight: 700;
+		background: linear-gradient(90deg, #00D9FF, #B537F2);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.service-desc {
+		font-size: 16px;
+		color: #aaa;
+		margin-bottom: 24px;
+		line-height: 1.6;
+	}
+
+	.service-features {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 28px;
+	}
+
+	.service-features li {
+		position: relative;
+		padding-left: 24px;
+		margin-bottom: 12px;
+		font-size: 15px;
+		color: #ddd;
+	}
+
+	.service-features li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: var(--color-cyan);
+		font-weight: 700;
+		font-size: 18px;
+	}
+
+	.book-btn {
+		width: 100%;
+		background: linear-gradient(90deg, #FF006E, #FB5607);
+		color: white;
+		border: none;
+		padding: 14px 24px;
+		border-radius: 8px;
+		font-weight: 600;
+		font-size: 16px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.book-btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 10px 30px rgba(255, 0, 110, 0.4);
+	}
+
+	.featured-btn {
+		background: linear-gradient(90deg, #FB5607, #FFBE0B);
+	}
+
+	.featured-btn:hover {
+		box-shadow: 0 10px 30px rgba(251, 86, 7, 0.4);
+	}
+
+	@media (min-width: 768px) {
+		.services-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.service-card.featured {
+			grid-column: span 2;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.services-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.service-card.featured {
+			grid-column: 2;
+			grid-row: 1;
+		}
+	}
+</style>
