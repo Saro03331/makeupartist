@@ -1,6 +1,53 @@
 ---
 ---
 
+<section id="testimonials">
+	<div class="testimonials-container">
+		<div class="section-header">
+			<h2>Client Love Stories</h2>
+			<p class="section-subtitle">Real Transformations</p>
+		</div>
+
+		<div class="testimonials-carousel">
+			<div class="testimonial-card">
+				<div class="stars">⭐⭐⭐⭐⭐</div>
+				<p class="review">"The makeup was absolutely flawless! I felt like a queen on my wedding day. Every detail was perfect and lasted the entire event!"</p>
+				<div class="reviewer">
+					<img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Client"/>
+					<div>
+						<div class="reviewer-name">Priya Sharma</div>
+						<div class="reviewer-title">Bridal Makeup Client</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card">
+				<div class="stars">⭐⭐⭐⭐⭐</div>
+				<p class="review">"The mehandi was so beautiful and intricate! The design was exactly what I imagined and the henna was natural and long-lasting."</p>
+				<div class="reviewer">
+					<img src="https://images.pexels.com/photos/1181697/pexels-photo-1181697.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Client"/>
+					<div>
+						<div class="reviewer-name">Anjali Patel</div>
+						<div class="reviewer-title">Mehandi Design Client</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card">
+				<div class="stars">⭐⭐⭐⭐⭐</div>
+				<p class="review">"Professional, creative, and so easy to work with. The entire team made me feel special and confident. Highly recommended!"</p>
+				<div class="reviewer">
+					<img src="https://images.pexels.com/photos/1181691/pexels-photo-1181691.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Client"/>
+					<div>
+						<div class="reviewer-name">Neha Verma</div>
+						<div class="reviewer-title">Complete Package Client</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section id="about">
 	<div class="about-container">
 		<div class="about-content">
@@ -51,13 +98,98 @@
 </section>
 
 <style>
+	#testimonials {
+		background: var(--color-light);
+		padding: 100px 0;
+	}
+
+	.testimonials-container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	#testimonials .section-header {
+		margin-bottom: 60px;
+	}
+
+	#testimonials .section-header h2 {
+		background: linear-gradient(90deg, #FF006E, #FFBE0B);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.testimonials-carousel {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 32px;
+	}
+
+	.testimonial-card {
+		background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+		padding: 40px;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 0, 110, 0.1);
+		transition: all 0.4s ease;
+	}
+
+	.testimonial-card:hover {
+		transform: translateY(-8px);
+		border-color: rgba(255, 0, 110, 0.3);
+		box-shadow: 0 15px 50px rgba(255, 0, 110, 0.2);
+	}
+
+	.stars {
+		font-size: 24px;
+		margin-bottom: 16px;
+		display: block;
+	}
+
+	.review {
+		font-size: 16px;
+		color: #ddd;
+		line-height: 1.8;
+		margin-bottom: 24px;
+		font-style: italic;
+	}
+
+	.reviewer {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.reviewer img {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 2px solid var(--color-cyan);
+	}
+
+	.reviewer-name {
+		font-weight: 600;
+		color: var(--color-white);
+		font-size: 16px;
+	}
+
+	.reviewer-title {
+		font-size: 12px;
+		color: var(--color-cyan);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
 	#about {
-		background: var(--color-white);
+		background: var(--color-light);
+		padding: 100px 0;
 	}
 
 	.about-container {
 		max-width: 1400px;
 		margin: 0 auto;
+		padding: 0 24px;
 	}
 
 	.about-content {
@@ -96,14 +228,17 @@
 		font-size: 48px;
 		font-weight: 700;
 		margin-bottom: calc(var(--spacing-unit) * 2);
-		color: var(--color-dark);
+		background: linear-gradient(90deg, #FF006E, #FFBE0B);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
 	}
 
-	.section-subtitle {
-		font-size: 20px;
-		color: var(--color-primary);
-		font-weight: 500;
-		letter-spacing: 2px;
+	#about .section-subtitle {
+		font-size: 18px;
+		color: var(--color-cyan);
+		font-weight: 600;
+		letter-spacing: 3px;
 		text-transform: uppercase;
 		margin-bottom: calc(var(--spacing-unit) * 4);
 		display: block;

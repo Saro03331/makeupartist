@@ -24,13 +24,15 @@
 	}
 
 	:root {
-		--color-primary: #C9A981;
-		--color-secondary: #D4AF76;
-		--color-accent: #E8C5A5;
-		--color-dark: #2C2420;
-		--color-text: #4A4A4A;
-		--color-light: #FAF8F6;
+		--color-primary: #FF006E;
+		--color-secondary: #FB5607;
+		--color-accent: #FFBE0B;
+		--color-dark: #1A1A1A;
+		--color-light: #0F0F0F;
+		--color-text: #E8E8E8;
 		--color-white: #FFFFFF;
+		--color-cyan: #00D9FF;
+		--color-purple: #B537F2;
 		--font-heading: 'Cormorant Garamond', serif;
 		--font-body: 'Montserrat', sans-serif;
 		--spacing-unit: 8px;
@@ -48,6 +50,56 @@
 		color: var(--color-text);
 		background: var(--color-light);
 		line-height: 1.6;
+		overflow-x: hidden;
+	}
+
+	@keyframes slideInUp {
+		from {
+			opacity: 0;
+			transform: translateY(50px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes slideInDown {
+		from {
+			opacity: 0;
+			transform: translateY(-50px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes glow {
+		0%, 100% {
+			text-shadow: 0 0 10px #FF006E, 0 0 20px #FF006E;
+		}
+		50% {
+			text-shadow: 0 0 20px #FF006E, 0 0 30px #FB5607;
+		}
+	}
+
+	@keyframes float {
+		0%, 100% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+	}
+
+	@keyframes pulse {
+		0%, 100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.5;
+		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
